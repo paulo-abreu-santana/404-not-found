@@ -1,0 +1,130 @@
+:root {
+  --white: #fff;
+  --text: #4f4f4f;
+  --title: #333333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ustify-content: center;
+
+  background: var(--white);
+  padding: 2.5rem 4.375rem 1.5rem 4.375rem;
+}
+
+header h1 {
+  font: 700 1.5rem 'Inconsolata', sans-serif;
+  color: var(--title);
+}
+
+main {
+  margin-top: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 7rem;
+}
+
+main .scarecrow img {
+  width: 33rem;
+  height: 28rem;
+}
+
+main .text h1 {
+  max-width: 37rem;
+  font: 700 4rem 'Space Mono', sans-serif;
+  color: var(--title);
+}
+
+main .text p {
+  width: 24rem;
+  margin-top: 2.25rem;
+
+  font: 400 1rem 'Space Mono', sans-serif;
+  color: var(--text);
+}
+
+main .text a {
+  display: inline-block;
+
+  margin-top: 4rem;
+
+  background: var(--title);
+  padding: 1.5rem 2.68rem;
+
+  font: 700 0.875rem 'Space Mono', sans-serif;
+
+  color: var(--white);
+}
+
+footer {
+  text-align: center;
+  margin-top: 17.5rem;
+
+  font: 700 0.875rem 'Montserrat', sans-serif;
+  color: var(--text);
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--title);
+}
+
+@media (max-width: 1080px) {
+  body {
+    padding: 1.25rem 0 1.25rem 1.5rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main .scarecrow img {
+    margin-top: -4rem;
+
+    width: 18rem;
+    height: 15rem;
+  }
+
+  main .text h1 {
+    max-width: 100%;
+    font-size: 2.5rem;
+  }
+
+  main .text p {
+    width: 100%;
+    font-size: 1.125rem;
+  }
+
+  main .text a {
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 7rem;
+    padding-right: 1.5rem;
+  }
+}
